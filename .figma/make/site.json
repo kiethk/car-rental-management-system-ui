@@ -1,0 +1,10 @@
+{
+  "description": "Enables customers in Ho Chi Minh City to rent cars by the hour with flexible timing, preferred vehicle selection, and secure booking and payment options.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

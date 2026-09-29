@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-navy: #0d1b3e;
+  --color-navy-dark: #070f22;
+  --color-navy-light: #162550;
+  --color-amber: #e8920a;
+  --color-amber-light: #fbb03b;
+  --color-amber-dark: #c4780a;
+  --color-surface: #f4f6f9;
+  --color-surface-2: #eaecf2;
+
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --background: #f4f6f9;
+  --foreground: #0d1b3e;
+  --card: #ffffff;
+  --card-foreground: #0d1b3e;
+  --primary: #0d1b3e;
+  --primary-foreground: #ffffff;
+  --secondary: #eaecf2;
+  --secondary-foreground: #0d1b3e;
+  --muted: #e2e6ef;
+  --muted-foreground: #6b7694;
+  --accent: #e8920a;
+  --accent-foreground: #ffffff;
+  --border: #d6dae8;
+  --ring: #e8920a;
+  --radius: 0.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbars by default */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6dae8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b0b8d0;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono-data {
+  font-family: var(--font-mono);
+}
+
+.admin-workspace :is(button, a, input, select, textarea):focus-visible {
+  outline: 2px solid #e8920a;
+  outline-offset: 3px;
+}
+
+.admin-workspace button:not(:disabled),
+.admin-workspace select {
+  cursor: pointer;
+}
